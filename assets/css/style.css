@@ -1,0 +1,58 @@
+body {
+  background-image: url("../images/background.jpg");
+  color:white;
+  font-family: 'Indie Flower', cursive;
+}
+
+.wrapper {
+  background-color: white;
+  width:55%;
+}
+
+img {
+  background-image: url("../images/buttons.jpg") no-repeat;
+  margin:none;
+  padding:none;
+  width:60px;
+  height:90px;
+}
+
+button {
+  background-color: white;
+}
+
+.header {
+  background-color: brown;
+  width:50%;
+}
+
+.instructions {
+  background-color: #DEB887;
+  padding:10px;
+  width: 45%;
+}
+
+.number-guess {
+  background-color: #006400;
+}
+
+.win-lose {
+  background-color: teal;
+  width:20%;
+  margin-left: 2%;
+  padding:10px;
+}
+
+.total {
+  background-color: teal;
+  width: 20%;
+}
+
+.margin-bottom {
+  margin-bottom: 3%;
+}
+
+.margin-top {
+  margin-top: 3%;
+}
+

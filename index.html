@@ -2,25 +2,87 @@
 <html lang="en-us">
   <head>
 
-      <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-  <!-- Optional theme -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-
     <meta charset="UTF-8">
+
+<!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- custom css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+<!-- font css -->
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+
     <title>
-      Data Types, User Input, Conditional Logic
+      Tik Collector Game
     </title>
+  
   </head>
+  
   <body>
 
+  
+  <div class="container wrapper">
+   
+   <div class="row header margin-bottom">
+    <div class="col-sm-12">
+     <h1>Tiki Collector!</h1>
+    </div>
+   </div>
+  
+  <div class="row instructions margin-bottom">
+    <div class="col-sm-12">
+      <p>You will be given a random number at the start of the game</p>
+      
+      <p>There are four Tikis below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
 
+      <p>You win the game by matching your total score to random number, you lose the game if you total score goes above the random number.</p>
+      
+      <p>The value of each Tiki is hidden from you until you click on it.</p>
 
+      <p>Each time when the game starts, the game will change the values of each Tiki.</p>
+    </div>
+
+  </div>
+
+  <div class="row">
+    <div class="col-sm-4 number-guess">  
+    <h1 >Number to Guess: <span id="number-to-guess"></span></h1>
+    </div>  
+    <div class ="col-sm-1"></div>
+    <div class="col-sm-7">
+      <div id="contsent-game-data" class="win-lose">
+        <div id="wins"></div>
+        <div id="losses"></div>
+      </div>
+    </div>
+  </div>
+<!-- Note that this div is now empty. We will fill it dynamically -->
+  <div class="row margin-top">
+      <div class="btn-group">
+        <button class="btn btn1"><img src="assets/images/buttons.jpg"></button>
+        <button class="btn btn2"><img src="assets/images/buttons.jpg"></button>
+        <button class="btn btn3"><img src="assets/images/buttons.jpg"></button>
+        <button class="btn btn4"><img src="assets/images/buttons.jpg"></button>
+      </div>
+  </div>
+
+  <div class="row total margin-top">
+      <div id="current-game-data">
+        <div>Your Total Score</div>
+        <div id="result"></div>
+      </div>
+  </div>
+
+  </div><!-- wrapper -->
 
 <!-- JavaScript -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" scr="assets/javascript/game.js">
+  <script type="text/javascript" src="assets/javascript/game.js"></script>
+  
   </body>
+
 </html>
